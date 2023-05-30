@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Tomcat" remoteFilesAllowedToDisappearOnAutoupload="false" />
+  <component name="PublishConfigData" serverName="Tomcat" uploadOnCheckin="b2023f3f-c49e-4e80-a674-d41c2e6c7da9" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <option name="myUploadOnCheckinName" value="Tomcat" />
+  </component>
 </project>

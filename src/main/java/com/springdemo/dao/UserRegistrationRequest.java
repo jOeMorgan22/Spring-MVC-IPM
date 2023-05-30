@@ -1,11 +1,10 @@
 package com.springdemo.dao;
 
-import validation.Password;
-import validation.Username;
+import com.springdemo.validation.Password;
+import com.springdemo.validation.Username;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 public class UserRegistrationRequest {
 

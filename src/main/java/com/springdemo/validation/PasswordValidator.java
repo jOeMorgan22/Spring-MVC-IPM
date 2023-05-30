@@ -1,4 +1,4 @@
-package validation;
+package com.springdemo.validation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -17,11 +17,11 @@ public class PasswordValidator implements ConstraintValidator<Password, String> 
 
     @Override
     public boolean isValid(String value, ConstraintValidatorContext constraintValidatorContext) {
-        if(value.isEmpty() || value.isBlank() || value == null){
+        if(value.isEmpty() || value.isBlank()){
             return false;
         }
         Pattern pattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&+=]).{8,}$");
         Matcher matcher = pattern.matcher(value);
-        return matcher.find() ? true : false;
+        return matcher.find();
     }
 }
